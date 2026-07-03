@@ -1,0 +1,11 @@
+faster-whisper>=1.1
+sounddevice>=0.4
+numpy
+keyboard>=0.13
+pystray>=0.19
+Pillow>=10
+PyYAML>=6
+requests>=2.31
+# CUDA runtime for GPU inference (ctranslate2 finds these via transcribe.py PATH setup)
+nvidia-cublas-cu12
+nvidia-cudnn-cu12

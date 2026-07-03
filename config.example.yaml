@@ -1,0 +1,25 @@
+# Copy to config.yaml and edit. Missing keys fall back to these defaults.
+
+# Push-to-talk combo. Key names from the `keyboard` library, e.g.:
+# ctrl, alt, shift, windows, space, f8, caps lock
+hotkey: [ctrl, alt, space]
+
+whisper:
+  model: large-v3      # tiny | base | small | medium | large-v3 | large-v3-turbo
+  device: auto         # cpu | cuda | auto
+  compute_type: auto   # auto | int8 | float16 ...
+  language: en         # null = auto-detect (unreliable on short clips), or "en", "es", ...
+  beam_size: 5         # higher = more accurate, slower
+  initial_prompt: null # optional text to bias vocabulary, e.g. "Kubernetes, Ollama, CUDA"
+  vad_min_silence_ms: 400  # silence (ms) before VAD cuts a segment; raise if words get clipped
+  vad_speech_pad_ms: 300   # padding kept around detected speech so word edges aren't clipped
+  no_speech_threshold: 0.45  # drop segments this silent/uncertain; lower = stricter (fewer "....." / "???")
+  hallucination_silence_threshold: 2.0  # skip silent gaps longer than this (s) instead of hallucinating text into them
+
+ollama:
+  enabled: true        # false = paste the raw whisper transcript, skip LLM cleanup
+  url: http://localhost:11434
+  model: qwen2.5:7b-instruct  # any pulled Ollama model; 7b+ recommended, 3b models tend to rewrite/hallucinate content
+
+debug:
+  save_last_recording: false  # true = write last_recording.wav so you can listen to what whisper heard
