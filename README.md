@@ -1,6 +1,7 @@
 # Wispr Flow Clone
 
-Local, private push-to-talk dictation for Windows. Hold a hotkey, speak, release — your words are transcribed and typed into whatever app has focus.
+Local, private push-to-talk dictation for Windows. Hold a hotkey, speak, release — your words are transcribed and typed into whatever app has focus. Still working om it, works well but repeats the same thing 2 times.
+
 
 Hotkey → record → [faster-whisper](https://github.com/SYSTRAN/faster-whisper) transcription → optional [Ollama](https://ollama.com) cleanup → text injected via Windows API.
 
