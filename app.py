@@ -1,4 +1,4 @@
-"""Local Wispr Flow clone: hold hotkey -> record -> whisper -> ollama cleanup -> type into focused app."""
+
 import logging
 import sys
 import threading
