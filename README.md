@@ -7,7 +7,7 @@ Hotkey → record → [faster-whisper](https://github.com/SYSTRAN/faster-whisper
 
 Runs entirely on your machine. No audio or text leaves your PC.
 
-## Requirements
+### Requirements
 
 - Windows
 - Python 3.10
