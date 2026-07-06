@@ -10,7 +10,7 @@ Runs entirely on your machine. No audio or text leaves your PC.
 ## Requirements
 
 - Windows
-- Python 3.10+
+- Python 3.10
 - [Ollama](https://ollama.com) running locally (optional, for transcript cleanup)
 - NVIDIA GPU recommended for faster transcription (CPU works too)
 
